@@ -5,7 +5,16 @@
 [![Tests](https://github.com/sukhbinder/smollama-py/actions/workflows/test.yml/badge.svg)](https://github.com/sukhbinder/smollama-py/actions/workflows/test.yml)
 [![License](https://img.shields.io/badge/license-Apache%202.0-blue.svg)](https://github.com/sukhbinder/smollama-py/blob/master/LICENSE)
 
-A python app to serve smOllama
+A python app to serve smOllama. Not everyone has npx so created this wrapper over excellent [smOllama](https://github.com/GUNNM-VR/smOllama) web page.
+
+smOllama is lightweight web browser chatbot interface for Ollama models. smollama-py is a python app to ease serving `smOllama`
+
+## Getting Started
+
+### Prerequisites
+
+- A running Ollama instance with at least one model installed
+- A modern web browser
 
 ## Installation
 
@@ -17,12 +26,26 @@ pip install smollama-py
 
 For help, run:
 ```bash
-smOllama-py --help
+smollama-py --help
 ```
 You can also use:
 ```bash
-python -m smOllama-py --help
+python -m smollama-py --help
 ```
+```
+usage: smollama-py [-h] [-m {chrome,electron,edge,msie}]
+
+A python app to serve smOllama
+
+optional arguments:
+  -h, --help            show this help message and exit
+  -m {chrome,electron,edge,msie}, --mode {chrome,electron,edge,msie}
+
+```
+
+### Demo
+![smollama-py](smollama-py-demo.gif)
+
 ## Development
 
 To contribute to this tool, first checkout the code. Then create a new virtual environment:

@@ -10,6 +10,9 @@ eel.init(public)
 
 def create_parser():
     parser = argparse.ArgumentParser(description="A python app to serve smOllama")
+    parser.add_argument(
+        "-m", "--mode", choices=["chrome", "electron", "edge", "msie"], default="chrome"
+    )
     return parser
 
 
@@ -20,5 +23,12 @@ def cli():
     mycommand(args)
 
 
+def close(a, b):
+    sys.exit(0)
+
+
 def mycommand(args):
-    eel.start("index.html", size=(800, 600))
+    try:
+        eel.start("index.html", size=(800, 600), close_callback=close)
+    except KeyboardInterrupt:
+        sys.exit(0)
