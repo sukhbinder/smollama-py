@@ -43,6 +43,13 @@ optional arguments:
 
 ```
 
+### Usage
+
+1. Select your preferred Ollama model from the dropdown
+2. Type your message in the input field
+3. Press Enter or click the Send button
+4. View the response with rendered Markdown and LaTeX
+
 ### Demo
 ![smollama-py](https://raw.githubusercontent.com/sukhbinder/smollama-py/main/smollama-py-demo.gif)
 
