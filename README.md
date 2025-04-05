@@ -44,7 +44,7 @@ optional arguments:
 ```
 
 ### Demo
-![smollama-py](smollama-py-demo.gif)
+![smollama-py](https://raw.githubusercontent.com/sukhbinder/smollama-py/main/smollama-py-demo.gif)
 
 ## Development
 
